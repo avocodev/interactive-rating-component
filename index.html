@@ -64,21 +64,6 @@
     </div>
 
     <!-- <script type="module" src="scripts/script.js"></script> -->
-    <script>
-      const buttons = document.querySelectorAll(".js-rating-button");
-
-      let selectedButton = null;
-
-      buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-          buttons.forEach((btn) => {
-            btn.classList.remove("is-activated");
-          });
-
-          button.classList.add("is-activated");
-          selectedButton = button;
-        });
-      });
-    </script>
+    <script type="module" src="scripts/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,40 @@
+.main-content {
+  width: 100%;
+  background-color: var(--Dark-Blue-n);
+  margin: 5em auto;
+  padding: 30px;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content img[alt="illustration-thank-you"] {
+  margin-bottom: 2em;
+}
+
+.main-content .selected-rating {
+  background-color: var(--Shadow-Dark-Blue);
+  width: 180px;
+  height: 30px;
+  border-radius: 50px;
+  color: var(--Orange-p);
+  opacity: 90%;
+  font-weight: var(--Normal-Weight);
+  margin-bottom: 2.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content .title {
+  font-size: 1.7em;
+}
+
+.main-content .text-paragraph {
+  text-align: center;
+  font-size: 0.92em;
+}
