@@ -29,7 +29,7 @@ body {
 .d-mobile {
   width: 90%;
   background-color: var(--Dark-Blue-n);
-  margin: 35% auto 2rem;
+  margin: 15% auto 2rem;
   padding: 40px 30px;
   border-radius: 15px;
 }
