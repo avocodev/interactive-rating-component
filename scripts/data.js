@@ -1,4 +1,4 @@
-export let saveRating = localStorage.getItem("save-rating");
+export let saveRating = localStorage.getItem("save-rating") || 0;
 
 document.querySelectorAll(".js-rating-button").forEach((button) => {
   button.addEventListener("click", () => {

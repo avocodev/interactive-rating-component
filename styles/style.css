@@ -29,8 +29,8 @@ body {
 .d-mobile {
   width: 90%;
   background-color: var(--Dark-Blue-n);
-  margin: 10rem auto 2rem;
-  padding: 20px;
+  margin: 35% auto 2rem;
+  padding: 40px 30px;
   border-radius: 15px;
 }
 
@@ -49,8 +49,6 @@ body {
   width: 15px;
 }
 
-.d-mobile .main-content {
-}
 .main-content .title {
   font-weight: var(--Bold-Weight);
   font-size: 1.4rem;

@@ -18,3 +18,5 @@ buttons.forEach((button) => {
 document.querySelector(
   ".selected-rating"
 ).innerHTML = `You selected ${saveRating} out 5`;
+
+localStorage.removeItem("save-rating");
