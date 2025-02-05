@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --Orange-p: hsl(25, 97%, 53%);
+  --White-n: hsl(0, 0%, 100%);
+  --Light-Grey-n: hsl(217, 12%, 63%);
+  --Shadow-Dark-Blue: hsl(215, 19%, 22%);
+  --Dark-Blue-n: hsl(213, 19%, 18%);
+  --Very-Dark-Blue-n: hsl(216, 12%, 8%);
+  --Normal-Weight: 400;
+  --Bold-Weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 375px;
+  margin: 0 auto;
+  font-size: 15px;
+  font-family: "Overpass", serif;
+  background-color: var(--Very-Dark-Blue-n);
+  color: var(--White-n);
+}
+
+.d-mobile {
+  width: 90%;
+  background-color: var(--Dark-Blue-n);
+  margin: 10rem auto 2rem;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.d-mobile .icon-star {
+  background-color: var(--Shadow-Dark-Blue);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-bottom: 1.25em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-star img[alt="icon-star"] {
+  width: 15px;
+}
+
+.d-mobile .main-content {
+}
+.main-content .title {
+  font-weight: var(--Bold-Weight);
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+.main-content .text-paragraph {
+  color: var(--Light-Grey-n);
+  line-height: 1.5em;
+  font-size: 1em;
+  font-weight: var(--Normal-Weight);
+  margin-bottom: 1.5em;
+}
+.main-content .main-rating-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-rating-button .rating-button {
+  background-color: var(--Shadow-Dark-Blue);
+  color: var(--Light-Grey-n);
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+.rating-button:hover {
+  background-color: var(--Orange-p);
+  color: var(--Very-Dark-Blue-n);
+}
+
+.rating-button.is-activated {
+  background-color: var(--White-n);
+  color: var(--Very-Dark-Blue-n);
+}
+
+.main-content .submit-link {
+  text-decoration: none;
+}
+
+.submit-link .submit-button {
+  width: 100%;
+  height: 40px;
+  font-weight: var(--Bold-Weight);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: var(--Orange-p);
+  border: none;
+  border-radius: 25px;
+}
+
+.submit-button:hover {
+  background-color: var(--White-n);
+}

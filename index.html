@@ -1,49 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Rating state start -->
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
 
-  How did we do?
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <main class="d-mobile">
+      <div class="icon-star">
+        <img src="images/icon-star.svg" alt="icon-star" />
+      </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+      <div class="main-content">
+        <h1 class="title">How did we do?</h1>
+        <p class="text-paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
 
-  1 2 3 4 5
+        <section class="main-rating-button">
+          <button class="rating-button js-rating-button">1</button>
+          <button class="rating-button js-rating-button">2</button>
+          <button class="rating-button js-rating-button">3</button>
+          <button class="rating-button js-rating-button">4</button>
+          <button class="rating-button js-rating-button">5</button>
+        </section>
 
-  Submit
+        <a href="thank-you.html" class="submit-link">
+          <button class="submit-button">Submit</button>
+        </a>
+      </div>
+    </main>
+    <!-- Rating state end -->
 
-  <!-- Rating state end -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
 
-  <!-- Thank you state start -->
+    <!-- <script type="module" src="scripts/script.js"></script> -->
+    <script>
+      const buttons = document.querySelectorAll(".js-rating-button");
 
-  You selected <!-- Add rating here --> out of 5
+      let selectedButton = null;
 
-  Thank you!
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          buttons.forEach((btn) => {
+            btn.classList.remove("is-activated");
+          });
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          button.classList.add("is-activated");
+          selectedButton = button;
+        });
+      });
+    </script>
+  </body>
 </html>
